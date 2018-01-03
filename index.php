@@ -14,8 +14,8 @@
 	<!--[if IE]>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<![endif]-->
-	<title>ShotsFired Stream Team</title>
-	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+	<title>Ryan Wiesenberg</title>
+	<link rel="icon" type="image/png" sizes="96x96" href="assests/img/logo_white.png">
 	<!-- BOOTSTRAP CORE STYLE CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.css" />
 	<!--REQUIRED STYLE SHEETS-->
