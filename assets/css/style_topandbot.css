@@ -160,7 +160,7 @@ border-color: var(--grey);
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: var(--purple);
-    border-radius: 6px;
+    /*border-radius: 6px;*/
 }
 
 /* Show the dropdown menu on hover */
