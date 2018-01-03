@@ -110,7 +110,7 @@ border-color: var(--blue);
 }
 
 .navbar-brand{
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 100px;
   height: 100px;
   padding-top: 6px
