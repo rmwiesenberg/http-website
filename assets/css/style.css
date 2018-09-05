@@ -26,7 +26,7 @@
     background-color: transparent;
 }
 
-.navbar-inverse .navbar-nav {
+.navbar-inverse .navbar-nav>li>a {
     color: white;
 }
 
