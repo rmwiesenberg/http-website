@@ -1,8 +1,7 @@
 var slideIndex = 0;
-carousel;
 
 function carousel() {
-    ar i;
+    var i;
     var x = document.getElementsByClassName("slides");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
@@ -12,3 +11,5 @@ function carousel() {
     x[slideIndex-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+carousel();
