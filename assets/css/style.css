@@ -5,6 +5,11 @@
     --gray:#6b6b6b;
 }
 
-.carousel{
-    max-height: 480px;
+.navbar{
+    border: 0px;
+}
+
+.carousel-inner{
+    height: 360px;
+    width: 100%;
 }
