@@ -9,6 +9,10 @@
     margin-bottom: 0;
 }
 
+.carousel{
+    margin: auto;
+}
+
 .carousel-inner{
     height: 480px;
 }
