@@ -11,6 +11,7 @@
 
 .carousel{
     position: absolute;
+    text-align: center;
 }
 
 .carousel-inner{
