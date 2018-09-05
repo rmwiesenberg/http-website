@@ -26,6 +26,10 @@
     background-color: transparent;
 }
 
+.navbar-inverse .navbar-nav {
+    color: white;
+}
+
 .center {
     display: block;
     margin-left: auto;
