@@ -22,7 +22,7 @@
     border: 0;
 }
 
-.navbar-brand:focus, .navbar-toggle:hover {
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: transparent;
 }
 
