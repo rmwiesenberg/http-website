@@ -10,11 +10,23 @@
     border-radius: 0;
 }
 
+.navbar-inverse{
+    background-color: var(--gray);
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-toggle {
+    border: 0;
+}
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 360px;
+    max-height: 480px;
     max-width: 95%;
 }
 
