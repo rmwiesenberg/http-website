@@ -4,3 +4,7 @@
     --purple:#3a0184;
     --gray:#6b6b6b;
 }
+
+.carousel{
+    max-height: 480px;
+}
