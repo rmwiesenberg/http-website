@@ -15,3 +15,7 @@
     margin-right: auto;
     height: 480px;
 }
+
+.home-image {
+    background-color: var(--gray);
+}
