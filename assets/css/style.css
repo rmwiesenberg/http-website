@@ -14,7 +14,7 @@
     background-color: var(--gray);
 }
 
-.navbar-brand {
+.navbar-inverse .navbar-brand {
     color: white;
 }
 
