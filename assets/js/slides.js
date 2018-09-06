@@ -19,3 +19,13 @@ function decreaseSideIndex() {
 function setSlideIndex(idx) {
     document.getElementById("slides").src = images[idx];
 }
+
+$("home-image").click(function (e) {
+    const pWidth = $(this).innerWidth();
+    const pOffset = $(this).offset();
+    const x = e.pageX - pOffset.left;
+    if(pWidth/2 > x)
+        decreaseSideIndex();
+    else
+        increaseSideIndex();
+});
