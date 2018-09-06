@@ -44,7 +44,7 @@ body{
 }
 
 .carousel-control {
-    height: 100%;
+    height: inherit;
 }
 
 .home-image {
