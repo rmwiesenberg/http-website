@@ -43,6 +43,10 @@ body{
     max-width: 95%;
 }
 
+.carousel-control {
+    height: 100%;
+}
+
 .home-image {
     background-color: var(--gray);
 }
