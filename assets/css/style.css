@@ -5,6 +5,12 @@
     --gray:#222;
 }
 
+body{
+    min-width: 480px;
+    width: auto; !important;
+    width: 480px;
+}
+
 .navbar{
     margin-bottom: 0;
     border-radius: 0;
