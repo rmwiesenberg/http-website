@@ -64,7 +64,7 @@ body{
     left: 90%;
 }
 
-.home-projects h2 {
+.home-projects-title h2 {
     text-align: center;
 }
 
@@ -74,5 +74,5 @@ body{
 }
 
 .home-projects h3 {
-    left: 10%;
+    margin-left: 10%;
 }
