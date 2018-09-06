@@ -36,6 +36,13 @@
             $("#footer").load("footer.html");
         });
     </script>
+
+    <script type="text/javascript" src="jsmpeg/jsmpeg.min.js"></script>
+    <script type="text/javascript">
+        var canvas = document.getElementById('video-canvas');
+        var url = 'ws://'+document.location.hostname+':8082/';
+        var player = new JSMpeg.Player(url, {canvas: canvas});
+    </script>
 </head>
 <body>
 
@@ -59,12 +66,6 @@
             3D Printer Feed
         </h3>
         <canvas id="video-canvas" class="center"></canvas>
-        <script type="text/javascript" src="jsmpeg/jsmpeg.min.js"></script>
-        <script type="text/javascript">
-            var canvas = document.getElementById('video-canvas');
-            var url = 'ws://'+document.location.hostname+':8082/';
-            var player = new JSMpeg.Player(url, {canvas: canvas});
-        </script>
     </div>
 </div>
 <div id="footer"></div>
