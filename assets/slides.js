@@ -1,15 +1,23 @@
-var slideIndex = 0;
+let slideIndex = 1;
+const images = [
+    document.location.hostname + "/assets/img/guitar_trim.png",
+    document.location.hostname + "/assets/img/rbe_trim.png"
+];
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("slides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
+function increaseSideIndex() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setSlideIndex(slideIndex)
+}
+
+function decreaseSideIndex() {
+    slideIndex--;
+    if (slideIndex < 0) {slideIndex = images.length}
+    setSlideIndex(slideIndex)
+}
+
+function setSlideIndex(idx) {
+    document.getElementById("slides").src = images[idx];
 }
 
 carousel();
