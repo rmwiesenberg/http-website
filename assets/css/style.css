@@ -46,6 +46,7 @@ body{
     display: block;
     position: relative;
     z-index: 1;
+    max-width: 95%;
 }
 
 .slides-control {
