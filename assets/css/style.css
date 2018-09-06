@@ -64,7 +64,15 @@ body{
     left: 90%;
 }
 
+.home-projects h2 {
+    text-align: center;
+}
+
 .home-projects {
     max-height: 360px;
     position: relative;
+}
+
+.home-projects h3 {
+    left: 10%;
 }
