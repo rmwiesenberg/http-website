@@ -36,10 +36,8 @@ body{
 }
 
 .home-image {
-    position: relative;
     max-height: 360px;
     background-color: var(--gray);
-    z-index: 1;
 }
 
 .center {
