@@ -46,7 +46,6 @@ body{
 .center {
     margin: 0 auto;
     display: block;
-    position: relative;
     z-index: 1;
     max-width: 95%;
 }
@@ -69,7 +68,7 @@ body{
     text-decoration: underline;
 }
 
-.proj-card  {
+.home-projects .proj-card {
     max-height: 360px;
 }
 
