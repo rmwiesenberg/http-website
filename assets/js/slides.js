@@ -20,7 +20,7 @@ function setSlideIndex(idx) {
     document.getElementById("slides").src = images[idx];
 }
 
-$("home-image").click(function (e) {
+$("div").click(function (e) {
     const pWidth = $(this).innerWidth();
     const pOffset = $(this).offset();
     const x = e.pageX - pOffset.left;
