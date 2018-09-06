@@ -69,7 +69,7 @@ body{
 }
 
 .proj-card {
-    max-height: 360px;
+    max-height: 360px !important;
 }
 
 .home-projects h3 {
