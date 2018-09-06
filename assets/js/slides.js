@@ -1,7 +1,7 @@
 let slideIndex = 1;
 const images = [
-    document.location.hostname + "/assets/img/guitar_trim.png",
-    document.location.hostname + "/assets/img/rbe_trim.png"
+    "/assets/img/guitar_trim.png",
+    "/assets/img/rbe_trim.png"
 ];
 
 function increaseSideIndex() {
