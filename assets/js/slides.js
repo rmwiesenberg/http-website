@@ -1,4 +1,4 @@
-let slideIndex = 1;
+let slideIndex = 0;
 const images = [
     "/assets/img/guitar_trim.png",
     "/assets/img/rbe_trim.png"
@@ -6,13 +6,13 @@ const images = [
 
 function increaseSideIndex() {
     slideIndex++;
-    if (slideIndex > images.length) {slideIndex = 1}
+    if (slideIndex >= images.length) {slideIndex = 0}
     setSlideIndex(slideIndex)
 }
 
 function decreaseSideIndex() {
     slideIndex--;
-    if (slideIndex < 0) {slideIndex = images.length}
+    if (slideIndex < 0) {slideIndex = images.length - 1}
     setSlideIndex(slideIndex)
 }
 
