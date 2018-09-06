@@ -46,8 +46,16 @@ body{
     max-width: 95%;
 }
 
-.carousel-control .carousel-control.right .carousel-control.left {
+.carousel-control {
     height: inherit;
+}
+
+.carousel-control.right {
+    left: 90%;
+}
+
+.carousel-control.left {
+    left: 10%;
 }
 
 .home-image {
