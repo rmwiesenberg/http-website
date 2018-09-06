@@ -6,7 +6,7 @@ const images = [
 
 function increaseSideIndex() {
     slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
+    if (slideIndex >= images.length) {slideIndex = 0}
     setSlideIndex(slideIndex)
 }
 
