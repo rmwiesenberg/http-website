@@ -69,9 +69,8 @@ body{
     text-decoration: underline;
 }
 
-.home-projects {
+.home-projects proj-card {
     max-height: 360px;
-    position: relative;
 }
 
 .home-projects h3 {
