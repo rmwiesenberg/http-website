@@ -62,3 +62,8 @@ body{
 .slides-control.right {
     left: 90%;
 }
+
+.home-projects {
+    max-height: 480px;
+    position: relative;
+}
