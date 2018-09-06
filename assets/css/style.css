@@ -37,6 +37,7 @@ body{
 
 .home-image {
     max-height: 360px;
+    background-color: var(--gray);
 }
 
 .center {
@@ -46,6 +47,14 @@ body{
     max-width: 95%;
 }
 
-.home-image {
-    background-color: var(--gray);
+.slides-control {
+    z-index: 2;
+}
+
+.slides-control.left {
+    left: 10%;
+}
+
+.slides-control.right {
+    left: 90%;
 }
