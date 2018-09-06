@@ -45,7 +45,7 @@ body{
     margin: 0 auto;
     display: block;
     max-width: 95%;
-    position: absolute;
+    position: fixed;
 }
 
 .slides-control {
