@@ -42,10 +42,9 @@ body{
 }
 
 .center {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    display: block;
     max-width: 95%;
-    position: relative;
 }
 
 .slides-control {
