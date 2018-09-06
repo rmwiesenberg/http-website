@@ -17,10 +17,10 @@ function decreaseSideIndex() {
 }
 
 function setSlideIndex(idx) {
-    document.getElementById("slides").src = images[idx];
+    document.getElementById("slide-images").src = images[idx];
 }
 
-$("div").click(function (e) {
+$("#home-image-slides").click(function (e) {
     const pWidth = $(this).innerWidth();
     const pOffset = $(this).offset();
     const x = e.pageX - pOffset.left;
