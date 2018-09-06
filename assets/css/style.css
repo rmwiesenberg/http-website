@@ -66,7 +66,7 @@ body{
 
 .home-projects-title h2 {
     text-align: center;
-    text-decoration: underline 1;
+    text-decoration: underline;
 }
 
 .home-projects {
@@ -75,5 +75,5 @@ body{
 }
 
 .home-projects h3 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
