@@ -9,6 +9,7 @@ body{
     min-width: 480px;
     width: auto !important;
     background-color: var(--gray);
+    color: white;
 }
 
 .navbar{
@@ -64,6 +65,6 @@ body{
 }
 
 .home-projects {
-    max-height: 480px;
+    max-height: 360px;
     position: relative;
 }
