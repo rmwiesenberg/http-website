@@ -8,6 +8,7 @@
 body{
     min-width: 480px;
     width: auto !important;
+    background-color: var(--gray);
 }
 
 .navbar{
