@@ -43,10 +43,10 @@ body{
 
 .center {
     max-height: inherit;
-    margin: 0 auto;
     display: block;
     max-width: 95%;
     position: relative;
+    z-index: 1;
 }
 
 .slides-control {
