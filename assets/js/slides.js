@@ -19,5 +19,3 @@ function decreaseSideIndex() {
 function setSlideIndex(idx) {
     document.getElementById("slides").src = images[idx];
 }
-
-carousel();
