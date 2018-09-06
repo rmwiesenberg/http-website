@@ -46,7 +46,7 @@ body{
     max-width: 95%;
 }
 
-.carousel-control {
+.carousel-control .carousel-control.right .carousel-control.left {
     height: inherit;
 }
 
