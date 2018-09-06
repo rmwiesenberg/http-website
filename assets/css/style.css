@@ -48,6 +48,7 @@ body{
 }
 
 .slides-control {
+    position: relative;
     z-index: 4;
 }
 
