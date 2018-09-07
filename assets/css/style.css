@@ -68,16 +68,14 @@ body{
     text-decoration: underline;
 }
 
+.home-projects-title ar{
+    text-decoration: none;
+}
+
 .proj-card {
     max-height: 640px !important;
 }
 
 .home-projects h3 {
     margin-left: 5%;
-}
-
-.home-projects a, .home-projects a:visited, .home-projects a:hover{
-    text-decoration: none;
-    color: #000;
-
 }
