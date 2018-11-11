@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
+
+<head>
+    <title>Ryan Wiesenberg</title>
+    <%- include /src/templates/partials/head.ejs %>
+</head>
+<body>
+
+<%- include /src/templates/partials/header.ejs %>
+<div class="home-image" id="home-image-slides">
+    <img src="/assets/img/guitar_trim.png" class="center" id="slide-images">
+</div>
+<div class="home-projects-title">
+    <a href="/projects.html">
+        <h2>
+            Projects
+        </h2>
+    </a>
+</div>
+<div class="home-projects">
+    <div class="col-md-6 col-sm-6 proj-card">
+        <h3>
+            Featured Project
+        </h3>
+    </div>
+    <div class="col-md-6 col-sm-6 proj-card" >
+        <h3>
+            3D Printer Feed
+        </h3>
+        <canvas id="video-canvas" class="center"></canvas>
+        <script type="text/javascript" src="/assets/js/jsmpeg.min.js"></script>
+        <script type="text/javascript">
+            var canvas = document.getElementById('video-canvas');
+            var url = 'ws://rmwiesenberg.com:8082/';
+            var player = new JSMpeg.Player(url, {canvas: canvas});
+        </script>
+    </div>
+</div>
+<%- include /src/templates/partials/foot.ejs %>
+<script src="../../assets/js/slides.js"></script>
+
+</body>
+</html>
