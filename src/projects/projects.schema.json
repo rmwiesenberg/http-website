@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Schema for projects files",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Name of the project",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description of the project"
+    },
+    "media": {
+      "description": "Media to use. First one will be the background image for the tiles. The others will then appear below the description",
+      "type": "array",
+      "items": {
+        "description": "top-level relative path",
+        "type": "string"
+      }
+    },
+    "material": {
+      "description": "Lists to other material, reports, videos. ",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "Name of material. Will be the hyperlink text",
+            "type": "string"
+          },
+          "href": {
+            "description": "Hyperlink",
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "media"
+  ],
+  "additionalProperties": false
+}
