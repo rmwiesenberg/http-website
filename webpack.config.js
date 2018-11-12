@@ -34,35 +34,12 @@ function generateHtmlPlugins (pageDir) {
     })
 }
 
-var walk = function(dir, done) {
-    var results = [];
-    fs.readdir(dir, function(err, list) {
-        if (err) return done(err);
-        var pending = list.length;
-        if (!pending) return done(null, results);
-        list.forEach(function(file) {
-            file = path.resolve(dir, file);
-            fs.stat(file, function(err, stat) {
-                if (stat && stat.isDirectory()) {
-                    walk(file, function(err, res) {
-                        results = results.concat(res);
-                        if (!--pending) done(null, results);
-                    });
-                } else {
-                    results.push(file);
-                    if (!--pending) done(null, results);
-                }
-            });
-        });
-    });
-};
-
 const htmlPlugins = generateHtmlPlugins(path.join(paths.TEMPLATES, 'pages'));
 
 module.exports = {
-    entry: {
-        index: path.join(paths.SRC, 'index.js')
-    },
+    entry: [
+        path.join(paths.SRC, 'app.js')
+    ],
     devServer: {
         contentBase: paths.SRC
     },
@@ -74,20 +51,20 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: 'css-loader'
-                })
+                loaders: [
+                    'style-loader',
+                    'css-loader'
+                ]
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(ttf|eot|png|svg|jpg|gif)$/,
                 use: 'file-loader'
             },
             {
                 test: /\.ejs$/,
                 loader: 'ejs-compiled-loader'
             }
-        ],
+        ]
     },
     plugins: [
         new CopyWebpackPlugin([

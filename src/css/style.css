@@ -80,3 +80,15 @@ a, a:hover, a:visited, a:active {
 .home-projects h3 {
     margin-left: 5%;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: inherit;
+    text-align: right;
+    padding-top: 10px;
+}
