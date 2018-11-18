@@ -29,3 +29,5 @@ $("#home-image-slides").click(function (e) {
     else
         increaseSideIndex();
 });
+
+setSlideIndex(slideIndex);

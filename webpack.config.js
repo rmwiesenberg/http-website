@@ -1,8 +1,8 @@
 const path = require('path');
 
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
 const fs = require('fs');
 
 const paths = {
@@ -69,6 +69,10 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([
             {from:'src/assets', to:'assets'}
-        ])
+        ]),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        })
     ].concat(htmlPlugins)
 };

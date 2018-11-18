@@ -6,7 +6,7 @@
 }
 
 body{
-    min-width: 360px;
+    min-width: 480px;
     width: auto !important;
     background-color: var(--gray);
     color: white;
@@ -28,6 +28,13 @@ a, a:hover, a:visited, a:active {
 
 .navbar-inverse .navbar-brand {
     color: white;
+    font-size: 24px;
+}
+
+.navbar-brand .navbar-description {
+    padding-left: 5px;
+    font-size: 12px;
+    color: gray;
 }
 
 .navbar-toggle {
@@ -82,7 +89,6 @@ a, a:hover, a:visited, a:active {
 }
 
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
