@@ -81,7 +81,8 @@ a, a:hover, a:visited, a:active {
 }
 
 .proj-card {
-    max-height: 640px !important;
+    max-height: 480px !important;
+    padding: 10px;
 }
 
 .home-projects h3 {

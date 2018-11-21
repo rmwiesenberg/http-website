@@ -6,7 +6,36 @@
 </head>
 <body>
 <%- include /src/templates/partials/header.ejs%>
-<%-%>
+<div style="padding: 10px">
+    <%
+    var fs = require("fs");
+    var path = require("path");
+
+    var projectDir = path.resolve('src', 'projects');
+    console.log(projectDir.toString());
+    var projectJSONs = fs.readdirSync(projectDir);
+    projectJSONs.forEach(function(item) {
+        // Split names and extension
+        const parts = item.split('.');
+        const name = parts[0];
+        const extension = parts[1];
+
+        if (extension == "json") {
+            var jsonPath = path.join(projectDir, [name, extension].join('.'))
+            var data = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+
+            var color = 'grey';
+            if(typeof data.accent !== 'undefined'){
+                color = data.accent
+            }
+        %>
+        <div class="col-md-6 col-sm-6" style="padding: 10px">
+            <div class="center" style="background-color: <%=color%>">
+                <img class="proj-card" src=<%= data.media[0] %>>
+            </div>
+        </div>
+    <%}})%>
+</div>
 <%- include /src/templates/partials/footer.ejs%>
 </body>
 </html>

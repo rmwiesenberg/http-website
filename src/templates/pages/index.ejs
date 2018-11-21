@@ -9,7 +9,7 @@
 
 <%- include /src/templates/partials/header.ejs %>
 <div class="home-image" id="home-image-slides">
-    <img src="" class="center" id="slide-images">
+    <img src="/assets/img/guitar_trim.png" class="center" id="slide-images">
 </div>
 <div class="home-projects-title">
     <a href="/projects">
@@ -18,17 +18,21 @@
         </h2>
     </a>
 </div>
-<div class="home-projects">
-    <div class="col-md-6 col-sm-6 proj-card">
-        <h3>
-            Featured Project
-        </h3>
+<div class="home-projects" >
+    <div class="col-md-6 col-sm-6">
+        <div style="max-height: 640px !important;">
+            <h3>
+                Featured Project
+            </h3>
+        </div>
     </div>
-    <div class="col-md-6 col-sm-6 proj-card" >
-        <h3>
-            3D Printer Feed
-        </h3>
-        <div class="jsmpeg" data-url="ws://rmwiesenberg.com:8082/"></div>
+    <div class="col-md-6 col-sm-6" >
+        <div style="max-height: 640px !important;">
+            <h3>
+                3D Printer Feed
+            </h3>
+            <div class="jsmpeg" data-url="ws://rmwiesenberg.com:8082/"></div>
+        </div>
     </div>
 </div>
 <%- include /src/templates/partials/footer.ejs %>
